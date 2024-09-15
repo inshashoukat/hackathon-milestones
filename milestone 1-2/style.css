@@ -1,0 +1,152 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 150px;
+}
+
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section Styling */
+.left-section{
+    background-color: #2c2c2c;
+    color:white;
+    padding: 20px;;
+    width: 45%;
+    text-align: center;
+    border-right: 5px solid #73e5ff;
+}
+
+.profile-picture{
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid #73e5ff;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #73c2ff;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style-type: fill round;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin:5px 0;
+}
+
+/* Right Section Styling */
+.right-section{
+    padding: 20px;
+    width: 100%;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px skyblue;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #73e5ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+      border-right: none;
+      padding: 15px;
+    }
+  
+    .right-section {
+      padding-top: 0;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    h3 {
+      font-size: 1.2em;
+    }
+  
+    p, li {
+      font-size: 0.9em;
+    }
+  
+    ul {
+      padding-left: 15px;
+    }
+  
+    button {
+      padding: 8px 15px;
+    }
+  }
+  
+  /* Mobile Design */
+  @media (max-width: 480px) {
+    .resume-container {
+      padding: 5px;
+    }
+  
+    .left-section, .right-section {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.3em;
+    }
+  
+    h3 {
+      font-size: 1em;
+    }
+  
+    p, li {
+      font-size: 0.8em;
+    }
+  
+    ul {
+      padding-left: 10px;
+    }
+  
+    button {
+      padding: 7px 12px;
+    }
+  }
+
