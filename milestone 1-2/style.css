@@ -1,0 +1,170 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.resume-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows sections to stack on smaller screens */
+  background-color: white;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Left Section Styling */
+.left-section {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 20px;
+  width: 35%; /* Set a width suitable for desktop view */
+  text-align: center;
+  border-right: 5px solid #73e5ff;
+  box-sizing: border-box; /* Ensures padding is considered in the width */
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 5px solid #73e5ff;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #4ad7f7;
+}
+
+.left-section p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Right Section Styling */
+.right-section {
+  padding: 30px;
+  width: 65%; /* Set a width suitable for desktop view */
+  box-sizing: border-box; /* Ensures padding is considered in the width */
+}
+
+.right-section h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.right-section section {
+  margin-bottom: 20px;
+}
+
+.right-section p, .right-section li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Button Styling */
+button {
+  display: block;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px skyblue;
+  background-color: #73e5ff;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #5abfe3;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+  .resume-container {
+      flex-direction: column; /* Stack sections vertically */
+  }
+
+  .left-section, .right-section {
+      width: 100%; /* Full width for both sections */
+      padding: 20px;
+  }
+
+  .right-section {
+      padding-top: 0;
+  }
+
+  .profile-picture {
+      width: 120px;
+      height: 120px;
+  }
+
+  h3 {
+      font-size: 18px;
+  }
+
+  p, li {
+      font-size: 14px;
+  }
+
+  button {
+      font-size: 16px;
+      padding: 8px 15px;
+  }
+}
+
+/* Mobile Design */
+@media (max-width: 480px) {
+  body {
+      padding: 10px;
+  }
+
+  .resume-container {
+      padding: 10px;
+      box-shadow: none; /* Remove shadow to prevent overflow on small screens */
+  }
+
+  .left-section, .right-section {
+      padding: 10px;
+  }
+
+  .profile-picture {
+      width: 100px;
+      height: 100px;
+  }
+
+  h3 {
+      font-size: 16px;
+  }
+
+  p, li {
+      font-size: 12px;
+  }
+
+  button {
+      padding: 7px 10px;
+      font-size: 14px;
+  }
+}
